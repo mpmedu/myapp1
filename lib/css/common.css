@@ -1,0 +1,93 @@
+* {
+  /* cursor:default;     */
+  /* box-sizing: content-box; */
+  /* box-sizing: border-box; */
+  box-sizing: inherit;
+}
+
+body {
+  /*     font: small/1.3em Arial, Helvetica, sans-serif;
+   font: 0.9em Arial, Helvetica, sans-serif;
+*/
+  font: 0.8em Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+div,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin: 0.5em;
+}
+
+.nodisplay_important {
+  display: none !important;
+}
+
+.nodisplay {
+  display: none;
+}
+
+input,
+body {
+  /* Prevents text from being selected */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+
+/*    
+  the box class is needed for startupbox, myExplorer, unlockbox, creatorloginbox, getqnakeybox, adminbox,
+   msgbox, yesnobox, loading, flashbox, endbox, unlockbox and for spinner div 
+*/
+/* this is also in edu.all.css */
+.box {
+  border: 2px solid black;
+  position: absolute;
+  z-index: 9000;
+  padding: 1em 2em;
+  background-color: #ddd;
+  box-shadow: 0px 0px 6px 3px #222;
+  -moz-box-shadow: 0px 0px 6px 3px #222;
+  -webkit-box-shadow: 0px 0px 6px 3px #222;
+  text-align: center;
+}
+
+/* this is for contextpopup */
+#contextpopup.cbox {
+  border: 2px solid #fff;
+  position: absolute;
+  z-index: 9000;
+  background-color: #222;
+  color:#ddd;
+}
+
+#contextpopup.cbox p {
+  margin: 0.2em;
+  padding: 0.3em 0.4em;
+}
+
+#contextpopup.cbox p:hover {
+  background-color:#888;
+  color:white;
+}
+
+

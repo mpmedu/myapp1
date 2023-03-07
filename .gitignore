@@ -1,0 +1,7 @@
+/docs
+/res
+/lib/css/icon
+/lib/js/myappall.combined.adv.min.js
+*.js
+*.php
+*.jar

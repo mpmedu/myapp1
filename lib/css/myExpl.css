@@ -1,0 +1,139 @@
+ /* Global 
+   ======================================= */
+
+
+
+
+ /* 
+---------------------------
+Styles for the explorer which is used to open qna files.  
+---------------------------
+ */
+
+ #myExplorer {
+   position: absolute;
+   cursor: default;      /*    Use normal arrow pointer */
+   box-sizing: border-box;
+   /* display:flex;
+  align-items:center;
+  justify-content:center; */
+   z-index: 9999;
+   width: 530px;
+   background-color: #f8f8f8;
+   padding: 10px;
+   text-align: left;
+ }
+
+ .myExp_div1 {
+   float: left;
+   margin: 0 18px;
+ }
+
+ .myExp_h3_cls1 {
+   height: 24px;
+   font-size: 15px;
+   margin: 0;
+ }
+
+ .myExp_div2 {
+   width: 225px;
+   height: 225px;
+   border: solid 2px #888;
+   background: #fff;
+   overflow: auto;
+
+   padding: 5px;
+ }
+
+ .fileList li.wait {
+   background: url(./icon/spinner.gif) left top no-repeat;
+ }
+
+ /* File Extensions - I will only allow qna file types */
+ .fileList li>span.ext_qna {
+   background: url(./icon/world-1.gif) left top no-repeat;
+   /* background: url(./icon/file.png) left top no-repeat; */
+ }
+
+ .wait {
+   background: url(./icon/spinner.gif) left top no-repeat;
+ }
+
+ .directory {
+   display: inline-block;
+   /* background: url(./icon/directory.png) left top no-repeat; */
+   background: url(./icon/folder_closed.png) left top no-repeat;
+   width: 20px;
+   height: 16px;
+   margin-bottom: -3px;
+   margin-right: -2px;
+ }
+
+ .folder_open {
+   background: url(./icon/folder_open.png) left top no-repeat;
+ }
+
+ #myExplorer .itemName {
+   padding-left: 2px;
+   padding-right: 4px;
+   white-space: nowrap;
+ }
+
+ #myExplorer #catPopup>span.itemName {
+   text-decoration: underline;
+ }
+
+ #myExplorer #catPopup {
+   position: absolute;
+   background-color: #fff;
+   z-index: 10000;
+ }
+
+ #folders_div div.items>div {
+   position: relative;
+   margin-bottom: -1px;
+   white-space: nowrap;
+   height: 19px;
+ }
+
+ #files_div li>span {
+   padding-left: 19px;
+   padding-right: 4px;
+   line-height: 19px;
+ }
+
+ #files_div li>span:hover {
+   background-color: #eee;
+ }
+
+ .subcatlistdiv {
+   margin-left: 10px;
+ }
+
+ #myExplorer .itemName {
+   font-size: 13px;
+ }
+
+ #myExplorer .chosen {
+   /* background-color: #464 !important;
+  color: white; */
+   background-color: #ddd !important;
+ }
+
+ #myExplorer span.indx {
+   position: absolute;
+   width: 14px;
+ }
+
+ #myExplorer span {
+   margin: 0;
+   padding: 0;
+ }
+
+ #myExplorer .holder {
+   margin-left: 16px;
+ }
+
+ /* .crisp {
+   shape-rendering: crispEdgeskdld;
+ } */
