@@ -1,5 +1,4 @@
-
- /* PROJECTS: All
+/* PROJECTS: All
 ##############################################
           General styles
 ##############################################
@@ -24,6 +23,9 @@ p {
 body {
   position: relative;
   font: 0.8em Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-size: 1em; */
   /* min-height: 100%; */
 }
 
@@ -37,6 +39,8 @@ a {
 
 button {
   margin: 0.5em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nodisplay_important {
@@ -119,7 +123,7 @@ input[readonly="true"] {
   background: white;
   position: relative;
   box-sizing: border-box;
-  top:80px;
+  top: 80px;
   /* border: 2px solid blue;
   border: 2px solid #08f; */
   z-index: 20;
@@ -147,11 +151,11 @@ input[readonly="true"] {
 }
 
 #content {
-  margin-left:21%;
+  margin-left: 21%;
   height: 100%;
 }
 
-#startup{
+#startup {
   padding: 20px;
 }
 
@@ -166,7 +170,8 @@ input[readonly="true"] {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  -khtml-border-radius: 10px;  /* for old Konqueror browsers */
+  -khtml-border-radius: 10px;
+  /* for old Konqueror browsers */
 }
 
 #cont {
@@ -276,7 +281,7 @@ input[readonly="true"] {
 
 #topdiv {
   position: fixed;
-  width:100%;
+  width: 100%;
   z-index: 100;
   border-bottom: 2px solid #04d;
   background-color: #222;
@@ -293,6 +298,7 @@ input[readonly="true"] {
   text-shadow: 2px 1px 0px #09f;
   left: -20000px;
   font: 3.5em Cambria, 'Times New Roman', serif;
+  font: 3.0em Cambria, 'Times New Roman', serif;
   font-weight: bold;
   margin: 0;
   position: absolute;
@@ -303,6 +309,7 @@ input[readonly="true"] {
 #topdiv #pageName {
   text-shadow: 1px 1px 0px white;
   font: 2.5em Cambria, 'Times New Roman', serif;
+  font: 2.0em Cambria, 'Times New Roman', serif;
   font-weight: bold;
   /* margin: 0 15px; */
   margin: 0 1%;
@@ -317,7 +324,7 @@ input[readonly="true"] {
 #topmenucontainer {
   margin-top: 25px;
   padding-top: 7px;
-  background-color: #1b1b1b;
+  background-color: #222;
   position: absolute;
   z-index: 130;
 }
@@ -384,15 +391,18 @@ input#fn_output {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  color:#ddd;
+  color: #ddd;
+  color: #ccc;
   border: 1px solid white;
   z-index: 12;
   padding: 6px 11px;
   padding: 4px 11px;
 }
 
-#topdiv .menu:hover {
+#topdiv .menu:hover,
+#topdiv #theMenu .chosen:hover {
   color: white;
+  color: #eee;
   background-color: #04d;
 }
 
@@ -416,15 +426,27 @@ input#fn_output {
   width: 150px;
 }
 
-#topdiv ul li ul li {
+/* #topdiv ul li ul li {
   display: block;
   float: none;
   z-index: 100;
+} */
+
+/* #topdiv ul li:hover ul {
+  display: block;
+} */
+
+#topdiv #theMenu .chosen {
+  background-color: #07e;
+  color: white;
+  /* color:yellow; */
 }
 
-#topdiv ul li:hover ul {
-  display: block;
-}
+/* #topdiv #theMenu .chosen:hover {
+  background-color: #04d;
+  color:white;
+} */
+
 
 /* Content
    ========================================================================== */
@@ -435,28 +457,40 @@ input#fn_output {
   padding: 1px 10px;
   border-top: 2px solid #04d;
   position: relative;
-  top:80px;
+  top: 80px;
 }
 
 #fixed_sidebar {
   position: fixed;
-  left:0;
-  width:21%;
-  background-color:#222;
-  overflow-y:auto;
-  overflow-x:hidden;
-  border-right:2px solid #777;
-  height:100%;
+  left: 0;
+  width: 21%;
+  background-color: #222;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: 2px solid #777;
+  height: 100%;
 }
 
+#content {
+  background-color: #222;
+  color: #ddd
+}
+
+
+#col2 {
+  height: 100%;
+  height: auto;
+  position: relative;
+
+}
 
 /* class for the categories and checklist dialogs, no longer checklist
 ===================================== */
-.container_class {
+/* .container_class {
   position: absolute;
   z-index: 9999;
   border: 3px solid black;
-}
+} */
 
 
 /* dialog for showing the categories

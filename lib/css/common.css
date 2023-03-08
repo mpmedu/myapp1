@@ -71,8 +71,8 @@ body {
   text-align: center;
 }
 
-/* this is for contextpopup */
-#contextpopup.cbox {
+/* this is for contextPopup */
+#contextPopup {
   border: 2px solid #fff;
   position: absolute;
   z-index: 9000;
@@ -80,14 +80,31 @@ body {
   color:#ddd;
 }
 
-#contextpopup.cbox p {
+#contextPopup p {
   margin: 0.2em;
   padding: 0.3em 0.4em;
 }
 
-#contextpopup.cbox p:hover {
+#contextPopup p:hover {
   background-color:#888;
   color:white;
+}
+
+#dialogBox {
+  border: 2px solid black;
+  position: absolute;
+  z-index: 9000;
+  padding: 1em 2em;
+  background-color: #ddd;
+  box-shadow: 0px 0px 6px 3px #fff;
+  -moz-box-shadow: 0px 0px 6px 3px #fff;
+  -webkit-box-shadow: 0px 0px 6px 3px #fff;
+  /* text-align: center; */
+
+  width:80%;
+  top: 100px;
+  left: 100px;
+
 }
 
 

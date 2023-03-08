@@ -130,9 +130,10 @@ ul.ul_style li {
   background-color: #ddd !important;
 }
 
-div.okButton {
+#editCatButtons{
   text-align: center;
 }
+
 
 /* catlist styles END 
    XXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -155,6 +156,7 @@ div.okButton {
 }
 
 #addEditCategories {
-  position: absolute;
+  /* position: absolute;
   z-index: 200;
+  z-index: 1200; */
 }
